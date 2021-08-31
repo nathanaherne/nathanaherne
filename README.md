@@ -6,7 +6,9 @@
 
 - 💞️ I’m looking to collaborate on Business
 
-- 📫 How to reach me is on LinkedIn
+- 📫 How to reach me is on my LinkedIn Profile
+
+- I am currently working to update much of my code here
 
 <!---
 nathanaherne/nathanaherne is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
