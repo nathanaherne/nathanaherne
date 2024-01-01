@@ -1,14 +1,12 @@
 - 👋 Hi, I’m @nathanaherne
 
-- 👀 I’m interested in People, Business and Technology - in that order
+- 💪 I am a Business Model Expert, Executive, Board Member & Investor
 
-- 🌱 I’m currently learning about Maching Learning and Artificial Intelligence with a bent towards Psychology.
+- 🌱 My hobbies are my work - one of my hobbies is researching Artificial Intelligence and synthetic consciousness
 
-- 💞️ I’m looking to collaborate on Business
+- 💞️ I’m always looking for something new in business & collaborate with other experts
 
 - 📫 How to reach me is on my LinkedIn Profile
-
-- I am currently working to update much of my code here
 
 <!---
 nathanaherne/nathanaherne is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
