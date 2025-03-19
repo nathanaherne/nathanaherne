@@ -2,7 +2,7 @@
 
 - 💪 I am a Business Model Expert, Executive, Board Member & Investor
 
-- 🌱 My hobbies are my work - one of my hobbies is researching Artificial Intelligence and synthetic consciousness
+- 🌱 My hobbies are my work
 
 - 💞️ I’m always looking for something new in business & collaborate with other experts
 
