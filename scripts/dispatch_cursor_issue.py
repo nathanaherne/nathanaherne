@@ -293,6 +293,7 @@ def _prompt(repo: str, number: int, title: str, url: str, body: str, branch: str
         f"Default branch: {branch}\n\n"
         "Implement this issue on a new branch. Open a pull request. "
         "Do not merge, deploy, or push to the default branch. "
+        "A separate repository workflow may merge a low-risk pull request after checks pass. "
         "Do not create GitHub issues or change the cursor-ready or no-cursor labels. "
         "In the pull request, include what changed, the test or build command you ran, "
         f"its result, and Closes #{number}. "
@@ -492,7 +493,10 @@ def main() -> int:
             run_id,
             "completed",
             agent_id=agent_id,
-            detail="Pull request opened. It is not merged and nothing was deployed.",
+            detail=(
+                "Pull request opened. The Cursor safe auto-merge workflow evaluates it "
+                "after the required checks pass. This dispatcher does not merge it."
+            ),
             links=links,
         )
         return 0
