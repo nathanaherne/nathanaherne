@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Test dispatch rules
-        run: python3 -m unittest tests/dispatch_cursor_issue_test.py
+        run: python3 -m unittest discover -s tests -p '*_test.py' -v
       - name: Dispatch Cursor Cloud Agent
         env:
           GITHUB_TOKEN: ${{ github.token }}

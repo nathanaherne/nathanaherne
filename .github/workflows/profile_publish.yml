@@ -1,0 +1,35 @@
+name: Profile publish
+
+# Merging README.md to the default branch is what GitHub publishes at
+# https://github.com/nathanaherne. This workflow records that publication and
+# smoke-checks it. It does not create a hosting provider or change DNS.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  issues: write
+  deployments: write
+  administration: write
+  pull-requests: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Smoke-check the published profile
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          PUBLISH_SHA: ${{ github.sha }}
+        run: python3 scripts/publish_profile.py
